@@ -2,7 +2,7 @@
 
 namespace App;
 
-class EventBus implements EventPublisher, EventSubscriber {
+class EventBus implements Publisher, Listener {
     public function subscribe($event){
         return "{$event} Can Subscribe :))\n";
     }
@@ -11,7 +11,7 @@ class EventBus implements EventPublisher, EventSubscriber {
         return "{$event} Can not Subscribe :((\n";
     }
 
-    public function publishe($event){
+    public function publish($event){
         return "{$event} Can Publish :))\n";
     }
 }

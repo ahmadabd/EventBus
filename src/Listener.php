@@ -2,7 +2,7 @@
 
 namespace App;
 
-interface EventSubscriber {
+interface Listener {
     public function subscribe($event);
     public function unsubscribe($event);
 }

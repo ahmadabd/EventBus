@@ -18,7 +18,7 @@ $clients = [
 ];
 
 
-$client = "client2";
+$client = "client3";
 if (array_key_exists($client, $clients)){
     $clientObject = new $clients[$client];
     $clientObject->client($bus, $bus);
